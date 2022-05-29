@@ -32,7 +32,7 @@ No package.json é possível editar as informações do nosso projeto:
 - dependencies: após instalar um pacote é gerado esse campo registrando todas as dependencias do seu projeto
 _____
 
-REST:
+REST (em português, significa “Transferência de Estado Representacional”):
 É um estilo de arquitetura - um combinado de normas para se construir uma API robusta.
 Padrão: cliente-server (cliente pede, servidor entrega)
 Stateless: mantém sempre o estado e a qualidade da entrega.
@@ -43,11 +43,6 @@ GET (ler dados), POST (criar um novo dado), PATCH (altera um dado existente), PU
 RESTFULL: Quando a API segue todas as normas do REST.
 HTTP: Protocolo de comunicação cliente servidor: Cliente -> request | Servidor -> response
 
-Para cada verbo do REST resulta num resultado no BD: 
-CRUD: Create, Read, Update e Delete
-Create -> POST | Read -> GET | Update -> PATCH/PUT | Delete -> DELETE
-
-
 REQUISIÇÕES:
 
 CABEÇALHO - Um cabeçalho da requisição contém:
@@ -56,4 +51,13 @@ CABEÇALHO - Um cabeçalho da requisição contém:
 - Cookies, tokens, encodings, etc.
 
 ENDEREÇOS - contém:
-- VERBO+URL | Exemplo: get api.aluno.com.br/usuario/3
+- VERBO+URL | Exemplos:
+1- GET api.aluno.com.br/usuario/3: Obtem o usuário com o ID número 3;
+2- POST api.aluno.com.br/usuario/: Cria novo usuário;
+3- PUT api.aluno.com.br/usuario/3: Atualiza o usuário com o ID número 3;
+4- DELETE api.aluno.com.br/usuario/3: Deleta o usuário com ID número 3.
+_____
+
+Para cada verbo do REST resulta num resultado no BD: 
+CRUD: Create, Read, Update e Delete
+Create -> POST | Read -> GET | Update -> PATCH/PUT | Delete -> DELETE
