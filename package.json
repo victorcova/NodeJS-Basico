@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/victorcova/NodeJS-Basico#readme",
   "dependencies": {
-    "faker": "^6.6.6"
+    "faker": "^5.5.3"
   }
 }
