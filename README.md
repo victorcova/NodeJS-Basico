@@ -32,10 +32,28 @@ No package.json é possível editar as informações do nosso projeto:
 - dependencies: após instalar um pacote é gerado esse campo registrando todas as dependencias do seu projeto
 _____
 
-REST: Combinado de normas para se contruir uma API robusta. Ex: GET, POST, PATCH, PUT, DELETE, dentre outros conceitos.
+REST:
+É um estilo de arquitetura - um combinado de normas para se construir uma API robusta.
+Padrão: cliente-server (cliente pede, servidor entrega)
+Stateless: mantém sempre o estado e a qualidade da entrega.
+
+Exemplo de verbos do REST:
+GET (ler dados), POST (criar um novo dado), PATCH (altera um dado existente), PUT (atualizar um dado), DELETE (deletar um dado).
+
 RESTFULL: Quando a API segue todas as normas do REST.
 HTTP: Protocolo de comunicação cliente servidor: Cliente -> request | Servidor -> response
 
 Para cada verbo do REST resulta num resultado no BD: 
 CRUD: Create, Read, Update e Delete
 Create -> POST | Read -> GET | Update -> PATCH/PUT | Delete -> DELETE
+
+
+REQUISIÇÕES:
+
+CABEÇALHO - Um cabeçalho da requisição contém:
+- Tipo de conteúdo (texto, JSON, mídia, etc),
+- Código da resposta (200=ok, 404=notfound, etc) -> veja mais: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+- Cookies, tokens, encodings, etc.
+
+ENDEREÇOS - contém:
+- VERBO+URL | Exemplo: get api.aluno.com.br/usuario/3
